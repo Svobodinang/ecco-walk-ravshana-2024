@@ -1,0 +1,21 @@
+#tpl {
+    .title {
+        font-size: em($fsTitle, $basePxDp);
+        font-family: $font-accent;
+        font-weight: $font-weight-accent;
+        text-transform: uppercase;
+        color: var(--color-accent);
+
+        @media (--viewport-portrait-layout) {
+            font-size: em(55, $basePxMb);
+        }
+    }
+
+    .subtitle {
+        font-size: em(28, $basePxDp);
+
+        @media (--viewport-portrait-layout) {
+            font-size: em(16, $basePxMb);
+        }
+    }
+}

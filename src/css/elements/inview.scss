@@ -1,0 +1,33 @@
+#tpl {
+    .inview {
+        &.from-transform {
+            &.entered {
+                transition: transform 0.7s cubic-bezier(0, 0.21, 0.29, 1) var(--delay);
+            }
+
+            &:not(.entered) {
+                transform: translateX((var(--from-x))) scale(var(--from-scale));
+            }
+        }
+
+        // &.from-opacity {
+        //     &.entered {
+        //         transition: opacity 0.2s ease-in-out var(--delay);
+        //     }
+
+        //     &:not(.entered) {
+        //         opacity: 0;
+        //     }
+        // }
+
+        &.parallax {
+            transform:
+                rotate(calc(var(--parallax-progress) * 180deg * var(--k-progress-rotate) - 180deg * 0.5 * var(--k-progress-rotate)))
+                translate(
+                    calc(var(--parallax-progress) * 100% * var(--k-progress-x) - 50% * var(--k-progress-x)),
+                    calc(var(--parallax-progress) * 100% * var(--k-progress-y) - 50% * var(--k-progress-y))
+                )
+                scale(calc(var(--parallax-progress) * var(--k-progress-scale) + (1 - var(--k-progress-scale))));
+        }
+    }
+}
