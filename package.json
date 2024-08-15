@@ -75,6 +75,7 @@
         "autoprefixer": "10.4.4",
         "gsap": "^3.10.4",
         "poly-fluid-sizing": "1.2.1",
+        "swiper": "^11.1.9",
         "vanilla-sharing": "6.1.1"
     }
 }

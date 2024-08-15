@@ -1,0 +1,52 @@
+#tpl {
+    max-width: 100vw;
+    overflow: hidden;
+
+    .horizontal-scroll-container {
+        width: 100vw;
+        overflow: hidden;
+
+        @media (--viewport-portrait-layout) {
+            .swiper-wrapper {
+                flex-direction: column;
+                height: auto;
+            }
+        }
+    }
+
+    // temp
+    .swiper-slide {
+        height: 100vh;
+        padding: 100px;
+
+        .base {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        .parallax-layout {
+            transform: translateX(calc(50% - (var(--parallax-koef) * 100% * var(--parallax-progress))));
+
+            @media (--viewport-portrait-layout) {
+                transform: translateY(calc(50% - (var(--parallax-koef) * 100% * var(--parallax-progress))));
+            }
+
+            &--2 {
+                --parallax-koef: 1;
+
+                background-color: red;
+                width: 200px;
+                height: 200px;
+            }
+
+            &--3 {
+                --parallax-koef: 2;
+
+                background-color: blue;
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}
