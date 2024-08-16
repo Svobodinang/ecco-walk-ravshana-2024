@@ -25,6 +25,10 @@
             background-color: green;
         }
 
+        .inview-by-scroll {
+            opacity: calc(2 * var(--parallax-progress));
+        }
+
         .parallax-layout {
             transform: translateX(calc(50% - (var(--parallax-koef) * 100% * var(--parallax-progress))));
 
