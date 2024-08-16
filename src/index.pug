@@ -1,16 +1,25 @@
 article#tpl
+    include components/mainPage/mainPage.pug
+    include components/slide/slide.pug
+
     main.main 
         .horizontal-scroll-container#horizontalScroll
             .swiper-wrapper
-                .swiper-slide
-                    .inview-by-scroll.base .base
-                    .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
-                    .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3
-                .swiper-slide
-                    .inview-by-scroll.base .base
-                    .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
-                    .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3
-                .swiper-slide
-                    .inview-by-scroll.base .base
-                    .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
-                    .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3
+                each slide in data
+                    .swiper-slide
+                        if (slide.mainPage)
+                            +mainPage(slide.content)
+                        else
+                            +slide(slide.content)
+                //- .swiper-slide
+                //-     .inview-by-scroll.base .base
+                //-     .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
+                //-     .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3
+                //- .swiper-slide
+                //-     .inview-by-scroll.base .base
+                //-     .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
+                //-     .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3
+                //- .swiper-slide
+                //-     .inview-by-scroll.base .base
+                //-     .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
+                //-     .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3

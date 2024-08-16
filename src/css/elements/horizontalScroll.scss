@@ -14,42 +14,41 @@
         }
     }
 
-    // temp
     .swiper-slide {
         height: 100vh;
-        padding: 100px;
-
-        .base {
-            width: 100px;
-            height: 100px;
-            background-color: green;
-        }
+        width: auto;
 
         .inview-by-scroll {
-            opacity: calc(2 * var(--parallax-progress));
+            opacity: calc(3 * var(--parallax-progress));
         }
 
         .parallax-layout {
-            transform: translateX(calc(50% - (var(--parallax-koef) * 100% * var(--parallax-progress))));
+            // transform: translateX(calc(50% * var(--parallax-koef) - (var(--parallax-koef) * 50% * var(--parallax-progress))));
+            transform: translateX(calc(-200% * var(--parallax-koef) * var(--parallax-progress) + (var(--parallax-koef) * 100%)));
 
             @media (--viewport-portrait-layout) {
                 transform: translateY(calc(50% - (var(--parallax-koef) * 100% * var(--parallax-progress))));
             }
 
             &--2 {
-                --parallax-koef: 1;
+                --parallax-koef: 0.1;
 
-                background-color: red;
-                width: 200px;
-                height: 200px;
+                z-index: 20;
+                position: relative;
             }
 
             &--3 {
-                --parallax-koef: 2;
+                --parallax-koef: 0.2;
 
-                background-color: blue;
-                width: 400px;
-                height: 400px;
+                z-index: 50;
+                position: relative;
+            }
+
+            &--4 {
+                --parallax-koef: 0.5;
+
+                z-index: 60;
+                position: relative;
             }
         }
     }

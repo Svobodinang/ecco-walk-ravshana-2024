@@ -1,0 +1,4 @@
+mixin mainPage(content)
+    .main-page
+        img.main-page__img(src=`~assets/images/${content.img.name}` alt=content.title)
+        h1.text-accent.main-page__title!=content.title

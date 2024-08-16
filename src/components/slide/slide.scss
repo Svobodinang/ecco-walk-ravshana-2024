@@ -1,0 +1,94 @@
+#tpl {
+    .slide {
+        height: 100%;
+        display: flex;
+        padding-left: vh(44);
+
+        &__text-block {
+            padding-top: vh(270);
+            display: flex;
+            flex-direction: column;
+            margin-right: vh(-84);
+        }
+
+        &__accent-text {
+            height: vh(125);
+            margin-bottom: vh(189);
+            letter-spacing: -0.03em;
+        }
+
+        &__text {
+            width: rem(487);
+            align-self: flex-end;
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
+            gap: rem(14);
+            text-decoration: unset;
+            background-color: $color-light;
+            padding: rem(10);
+            padding-left: rem(14);
+            border-radius: rem(20);
+            transition: background-color 0.35s ease;
+            align-self: flex-end;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+
+        &__img-block {
+            display: flex;
+            position: relative;
+        }
+
+        &__shoes-help-text {
+            width: rem(120);
+            text-align: right;
+            margin-right: rem(12);
+            margin-top: vh(60);
+            font-size: rem(12);
+
+            a {
+                transition: opacity 0.3s ease;
+            }
+
+            a:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &__img {
+            margin-top: vh(60);
+            width: vh(746);
+            height: vh(884);
+        }
+
+        &__shoes-img-wrapper {
+            align-self: flex-end;
+            margin-bottom: vh(80);
+            position: absolute;
+            right: vh(-169);
+            cursor: pointer;
+
+            img {
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &.img-full-size {
+            .slide__img {
+                height: 100vh;
+                margin-top: 0;
+            }
+        }
+    }
+}

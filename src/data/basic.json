@@ -1,1 +1,72 @@
-[]
+[
+    {
+        "mainPage": true,
+        "content": {
+            "img": {
+                "name": "mainPage.jpg"
+            },
+            "title": "Равшана Куркова"
+        }
+    },
+    {
+        "content": {
+            "modifiers": "img-full-size",
+            "accentText": "Постой.",
+            "text": [
+                "Прогулка с&nbsp;Равшаной Курковой&nbsp;&mdash; это медитация, гармония, безмятежность. Любимый трек на&nbsp;повторе и&nbsp;любимый город, рассыпающийся под&nbsp;ногами причудливой сеткой дорог."
+            ],
+            "shoesInfo": {
+                "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/856813/50874/'>Кеды ECCO STREET ACE&nbsp;W</a>",
+                "link": "https://www.ecco.ru/catalog/856813/50874/"
+            },
+            "img": {
+                "name": "img1.jpg",
+                "alt": "Фотография Равшаны Курковой на улице"
+            }
+        }
+    },
+    {
+        "content": {
+            "modifiers": "",
+            "accentText": "Послушай.",
+            "button": {
+                "text": "Плейлист Равшаны для прогулки",
+                "link": "https://music.yandex.ru/users/Quendique/playlists/1008?utm_medium=copy_link"
+            },
+            "shoesInfo": {
+                "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/860403/52292/'>Ботинки ECCO STREET ACE RUGGED&nbsp;W</a>",
+                "link": "https://www.ecco.ru/catalog/860403/52292/",
+                "shoesImg": {
+                    "name": "shoes2.png",
+                    "alt": "Ботинки ECCO STREET ACE RUGGED W"
+                }
+            },
+            "img": {
+                "name": "img2.jpg",
+                "alt": "Фотография Равшаны Курковой на улице"
+            }
+        }
+    },
+    {
+        "content": {
+            "modifiers": "",
+            "accentText": "Послушай.",
+            "button": {
+                "text": "Плейлист Равшаны для прогулки",
+                "link": "https://music.yandex.ru/users/Quendique/playlists/1008?utm_medium=copy_link"
+            },
+            "shoesInfo": {
+                "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/860403/52292/'>Ботинки ECCO STREET ACE RUGGED&nbsp;W</a>",
+                "link": "https://www.ecco.ru/catalog/860403/52292/",
+                "shoesImg": {
+                    "name": "shoes2.png",
+                    "alt": "Ботинки ECCO STREET ACE RUGGED W"
+                }
+            },
+            "img": {
+                "name": "img2.jpg",
+                "alt": "Фотография Равшаны Курковой на улице"
+            }
+        }
+    }
+]
