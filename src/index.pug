@@ -1,4 +1,5 @@
 article#tpl
+    include components/meta.pug
     include components/mainPage/mainPage.pug
     include components/slide/slide.pug
 
@@ -11,6 +12,7 @@ article#tpl
                             +mainPage(slide.content)
                         else
                             +slide(slide.content)
+            .swiper-pagination
                 //- .swiper-slide
                 //-     .inview-by-scroll.base .base
                 //-     .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2

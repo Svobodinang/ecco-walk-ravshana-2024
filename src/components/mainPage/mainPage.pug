@@ -1,4 +1,5 @@
 mixin mainPage(content)
     .main-page
-        img.main-page__img(src=`~assets/images/${content.img.name}` alt=content.title)
+        img.main-page__img.main-page__img--lp(src=`~assets/images/${content.img.name}` alt=content.title)
+        img.main-page__img.main-page__img--pt(src=`~assets/images/${content.img.namePt}` alt=content.title)
         h1.text-accent.main-page__title!=content.title

@@ -14,9 +14,32 @@
         }
     }
 
+    .swiper-pagination {
+        top: auto;
+        left: vh(60);
+        bottom: vh(40);
+        width: calc(100vw - #{vh(60 * 2)});
+        height: 1px;
+        background-color: rgb(0 0 0 / 10%);
+
+        .swiper-pagination-progressbar-fill {
+            background-color: black;
+        }
+
+        @media (--viewport-portrait-layout) {
+            display: none;
+        }
+    }
+
     .swiper-slide {
+        --parallax-offset: 30vh;
+
         height: 100vh;
         width: auto;
+
+        @media (--viewport-portrait-layout) {
+            height: auto;
+        }
 
         .inview-by-scroll {
             opacity: calc(3 * var(--parallax-progress));
@@ -24,10 +47,10 @@
 
         .parallax-layout {
             // transform: translateX(calc(50% * var(--parallax-koef) - (var(--parallax-koef) * 50% * var(--parallax-progress))));
-            transform: translateX(calc(-200% * var(--parallax-koef) * var(--parallax-progress) + (var(--parallax-koef) * 100%)));
+            transform: translateX(calc(-2 * var(--parallax-offset) * var(--parallax-koef) * var(--parallax-progress) + (var(--parallax-koef) * var(--parallax-offset))));
 
             @media (--viewport-portrait-layout) {
-                transform: translateY(calc(50% - (var(--parallax-koef) * 100% * var(--parallax-progress))));
+                transform: translateY(calc(-2 * var(--parallax-offset) * var(--parallax-koef) * var(--parallax-progress) + (var(--parallax-koef) * var(--parallax-offset))));
             }
 
             &--2 {
@@ -35,6 +58,10 @@
 
                 z-index: 20;
                 position: relative;
+
+                @media (--viewport-portrait-layout) {
+                    --parallax-koef: 0.05;
+                }
             }
 
             &--3 {
@@ -42,6 +69,10 @@
 
                 z-index: 50;
                 position: relative;
+
+                @media (--viewport-portrait-layout) {
+                    --parallax-koef: 0.05;
+                }
             }
 
             &--4 {
@@ -49,6 +80,10 @@
 
                 z-index: 60;
                 position: relative;
+
+                @media (--viewport-portrait-layout) {
+                    --parallax-koef: 0.12;
+                }
             }
         }
     }

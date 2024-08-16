@@ -1,6 +1,7 @@
 #tpl {
     .main-page {
         height: 100%;
+        width: 100vw;
         padding: vh(60);
         padding-bottom: vh(60);
         display: flex;
@@ -8,12 +9,56 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (--viewport-portrait-layout) {
+            padding: rem(12, true) vw(32, true) 0;
+            justify-content: flex-start;
+            height: auto;
+        }
+
         &__img {
             width: vh(1320);
+            height: vh(757);
+
+            &--pt {
+                display: none;
+            }
+
+            @media (--viewport-portrait-layout) {
+                width: 100%;
+                height: auto;
+                order: 2;
+
+                &--pt {
+                    display: block;
+                }
+
+                &--lp {
+                    display: none;
+                }
+            }
         }
 
         &__title {
             font-size: vh(178.5);
+
+            @media (--viewport-portrait-layout) {
+                font-size: vw(86, true);
+                width: 100%;
+                margin-bottom: vw(22, true);
+                flex-shrink: 0;
+                flex-grow: 1;
+
+                span {
+                    width: 100%;
+                    display: block;
+                    margin-left: vw(-32, true);
+                }
+
+                span:last-of-type {
+                    text-align: right;
+                    margin-left: vw(25, true);
+                }
+            }
         }
     }
 }

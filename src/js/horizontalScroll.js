@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { FreeMode, Mousewheel } from 'swiper/modules';
+import { FreeMode, Mousewheel, Pagination } from 'swiper/modules';
 
 export default class HorizontalScroll {
     swiper = null;
@@ -12,8 +12,12 @@ export default class HorizontalScroll {
         touchEventsTarget: 'container',
         touchMoveStopPropagation: true,
         touchReleaseOnEdges: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar'
+        },
 
-        modules: [FreeMode, Mousewheel]
+        modules: [FreeMode, Mousewheel, Pagination]
     };
 
     init = () => {
