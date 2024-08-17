@@ -16,8 +16,8 @@ mixin slide(content)
                         <path d="M27.25 29.05C26.5625 29.05 26 28.4875 26 27.8V14.2C26 13.5125 26.5625 12.95 27.25 12.95C27.9375 12.95 28.5 13.5125 28.5 14.2V27.8125C28.5 28.5 27.9375 29.0625 27.25 29.0625V29.05Z" fill="#DAD6D1"/>
                     </svg>
         .slide__img-block
-            p.slide__shoes-help-text.inview-by-scroll.parallax-layout.parallax-layout--2!=content.shoesInfo.helpText
-            img.slide__img.inview-by-scroll.parallax-layout.parallax-layout--2(src=`~assets/images/${content.img.name}`, alt=content.img.alt)
+            p.slide__shoes-help-text.inview-by-scroll!=content.shoesInfo.helpText
+            img.slide__img.inview-by-scroll(src=`~assets/images/${content.img.name}`, alt=content.img.alt)
             if content.shoesInfo.shoesImg
                 a.slide__shoes-img-wrapper(href=content.shoesInfo.link) 
                     .inview-by-scroll.parallax-layout.parallax-layout--4
