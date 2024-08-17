@@ -2,6 +2,7 @@ article#tpl
     include components/meta.pug
     include components/mainPage/mainPage.pug
     include components/slide/slide.pug
+    include components/videoBlock/videoBlock.pug
 
     main.main 
         .horizontal-scroll-container#horizontalScroll
@@ -10,18 +11,8 @@ article#tpl
                     .swiper-slide
                         if (slide.mainPage)
                             +mainPage(slide.content)
+                        else if (slide.videoBlock)
+                            +videoBlock(slide.content)
                         else
                             +slide(slide.content)
             .swiper-pagination
-                //- .swiper-slide
-                //-     .inview-by-scroll.base .base
-                //-     .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
-                //-     .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3
-                //- .swiper-slide
-                //-     .inview-by-scroll.base .base
-                //-     .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
-                //-     .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3
-                //- .swiper-slide
-                //-     .inview-by-scroll.base .base
-                //-     .inview-by-scroll.parallax-layout.parallax-layout--2 layout 2
-                //-     .inview-by-scroll.parallax-layout.parallax-layout--3 layout 3

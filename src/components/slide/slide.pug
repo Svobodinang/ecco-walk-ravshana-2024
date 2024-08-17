@@ -3,7 +3,7 @@ mixin slide(content)
         .slide__text-block
             p.text-accent.slide__accent-text.inview-by-scroll.parallax-layout.parallax-layout--3!=content.accentText
             if content.text
-                p.slide__text.inview-by-scroll!=content.text
+                .slide__text.inview-by-scroll!=content.text
             if content.button
                 a.slide__button.inview-by-scroll.parallax-layout.parallax-layout--4(target="_blank" ref="noopener" href=content.button.link)
                     span.slide__button-text!=content.button.text

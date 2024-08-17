@@ -13,9 +13,7 @@
         "content": {
             "modifiers": "img-full-size",
             "accentText": "Постой.",
-            "text": [
-                "Прогулка с&nbsp;Равшаной Курковой&nbsp;&mdash; это медитация, гармония, безмятежность. Любимый трек на&nbsp;повторе и&nbsp;любимый город, рассыпающийся под&nbsp;ногами причудливой сеткой дорог."
-            ],
+            "text": "<p>Прогулка с&nbsp;Равшаной Курковой&nbsp;&mdash; это медитация, гармония, безмятежность. Любимый трек на&nbsp;повторе и&nbsp;любимый город, рассыпающийся под&nbsp;ногами причудливой сеткой дорог.</p>",
             "shoesInfo": {
                 "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/856813/50874/'>Кеды ECCO STREET ACE&nbsp;W</a>",
                 "link": "https://www.ecco.ru/catalog/856813/50874/"
@@ -50,23 +48,59 @@
     },
     {
         "content": {
-            "modifiers": "",
-            "accentText": "Послушай.",
-            "text": [
-                "Прогулка с&nbsp;Равшаной Курковой&nbsp;&mdash; это медитация, гармония, безмятежность. Любимый трек на&nbsp;повторе и&nbsp;любимый город, рассыпающийся под&nbsp;ногами причудливой сеткой дорог."
-            ],
+            "modifiers": "img-full-size m1",
+            "accentText": "Я люблю простоту",
+            "text": "<p>Равшана&nbsp;&mdash; наш проводник в&nbsp;мир неспешных прогулок, душевных разговоров и&nbsp;спокойного созерцания.</p><p>Она тонко чувствует гармонию случайностей, замечая в&nbsp;каждом мгновении что-то удивительное.</p>",
             "shoesInfo": {
-                "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/860403/52292/'>Ботинки ECCO STREET ACE RUGGED&nbsp;W</a>",
-                "link": "https://www.ecco.ru/catalog/860403/52292/",
+                "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/222033/11001/'>Полуботинки ECCO METROPOLE AMSTERDAM</a>",
+                "link": "https://www.ecco.ru/catalog/222033/11001/"
+            },
+            "img": {
+                "name": "img3.jpg",
+                "alt": "Фотография Равшаны Курковой на улице"
+            }
+        }
+    },
+    {
+        "content": {
+            "modifiers": "m2",
+            "accentText": "Моменты честные, настоящие, случайные",
+            "text": "<p>Гуляя по&nbsp;улицам Питера, мы&nbsp;ныряем в&nbsp;особый мир, где каждая деталь имеет значение. Отполированные шагами мостовые, живая кромка реки, первые желтые листья.</p>",
+            "shoesInfo": {
+                "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/860403/52292/'>Ботинки ECCO OFFROAD&nbsp;W</a>",
+                "link": "https://www.ecco.ru/catalog/822413/61015/",
                 "shoesImg": {
-                    "name": "shoes2.png",
-                    "alt": "Ботинки ECCO STREET ACE RUGGED W"
+                    "name": "shoes3.png",
+                    "alt": "Ботинки ECCO OFFROAD W"
                 }
             },
             "img": {
-                "name": "img2.jpg",
+                "name": "img4.jpg",
                 "alt": "Фотография Равшаны Курковой на улице"
             }
+        }
+    },
+    {
+        "content": {
+            "modifiers": "img-full-size m3",
+            "accentText": "Простые детали открывают целый мир",
+            "text": "<p>Красота повседневности, которая успокаивает, вдохновляет и&nbsp;наполняет.</p> <p>Пробуждает желание окружать себя комфортными вещами и&nbsp;светлыми эмоциями. Прямо сейчас, не&nbsp;дожидаясь особого повода.</p>",
+            "shoesInfo": {
+                "helpText": "На&nbsp;Равшане <a href='https://www.ecco.ru/catalog/209713/61071/'>Кеды ECCO STREET 720&nbsp;W</a>",
+                "link": "https://www.ecco.ru/catalog/209713/61071/"
+            },
+            "img": {
+                "name": "img5.jpg",
+                "alt": "Фотография Равшаны Курковой на улице"
+            }
+        }
+    },
+    {
+        "videoBlock": true,
+        "content": {
+            "accentText": "Пойдем пройдемся?",
+            "link": "https://edge-msk-8.kinescopecdn.net/3cf9507f-7fc2-4434-bac9-5c0185a3b7d9/videos/4e9f626e-71f8-435c-a968-a5498b7e9017/assets/b23ff987-e752-48f1-ad94-8095db54d95d/original.mp4",
+            "previewImgName": "preview.jpg"
         }
     }
 ]

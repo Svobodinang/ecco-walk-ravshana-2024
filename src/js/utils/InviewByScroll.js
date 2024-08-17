@@ -49,5 +49,17 @@ export default class {
                 }
             }));
         });
+
+        this.scrollTriggers.push(ScrollTrigger.create({
+            trigger: '#video',
+            ...params,
+            start: isPt ? 'top 50%' : 'left 50%',
+            onEnter: ({ trigger }) => {
+                trigger.play();
+            },
+            onLeaveBack: ({ trigger }) => {
+                trigger.pause();
+            }
+        }));
     }
 }
