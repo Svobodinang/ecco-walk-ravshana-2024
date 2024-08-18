@@ -46,6 +46,12 @@
             }
         }
 
+        .video-wrapper {
+            min-width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
         .video {
             height: 100vh;
             width: auto;

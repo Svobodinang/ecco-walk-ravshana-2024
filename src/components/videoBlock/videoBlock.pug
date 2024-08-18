@@ -18,17 +18,18 @@ mixin videoBlock(content)
                     </defs>
                 </svg>
             p.text-accent.video-block__accent-text!=content.accentText
-        video.video.inview-by-scroll(
-            id=`video`
-            controls=true
-            controlsList="nodownload" 
-            width="100%"
-            height="100%"
-            muted="muted"
-            type="video/mp4"
-            autopictureinpicture
-            data-scroll
-            poster=`~/assets/images/${content.previewImgName}`
-            playsinline
-        )
-            source(type='video/mp4' src=content.link)
+        .video-wrapper
+            video.video.inview-by-scroll(
+                id=`video`
+                controls=true
+                controlsList="nodownload" 
+                width="100%"
+                height="100%"
+                muted="muted"
+                type="video/mp4"
+                autopictureinpicture
+                data-scroll
+                poster=`~/assets/images/${content.previewImgName}`
+                playsinline
+            )
+                source(type='video/mp4' src=content.link)
