@@ -52,11 +52,12 @@
                     width: 100%;
                     display: block;
                     margin-left: vw(-32, true);
+                    letter-spacing: -0.03em;
                 }
 
                 span:last-of-type {
                     text-align: right;
-                    margin-left: vw(25, true);
+                    margin-left: vw(32, true);
                 }
             }
         }
