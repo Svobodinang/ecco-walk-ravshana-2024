@@ -113,7 +113,7 @@
                 text-align: left;
                 margin-top: rem(8, true);
                 margin-right: 0;
-                width: rem(130, true);
+                width: vw(130, true);
                 order: 2;
             }
 
@@ -152,7 +152,7 @@
             pointer-events: all;
 
             @media (--viewport-portrait-layout) {
-                width: rem(164, true);
+                width: vw(164, true);
                 right: rem(-18, true);
                 margin-bottom: 0;
                 bottom: auto;
