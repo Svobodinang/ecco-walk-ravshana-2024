@@ -1,7 +1,7 @@
 #tpl {
     .main-page {
         height: 100%;
-        width: 100vw;
+        min-width: 100vw;
         padding: vh(60);
         padding-bottom: vh(60);
         display: flex;
@@ -40,11 +40,12 @@
 
         &__title {
             font-size: vh(178.5);
+            margin-bottom: 0 !important;
 
             @media (--viewport-portrait-layout) {
                 font-size: vw(86, true);
                 width: 100%;
-                margin-bottom: vw(22, true);
+                margin-bottom: vw(22, true) !important;
                 flex-shrink: 0;
                 flex-grow: 1;
 

@@ -6,6 +6,7 @@
         font-weight: $font-weight-accent;
         letter-spacing: 0.03em;
         line-height: 0.7;
+        text-transform: unset;
 
         @media (--viewport-portrait-layout) {
             font-size: vw(80, true);

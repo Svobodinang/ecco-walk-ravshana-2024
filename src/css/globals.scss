@@ -10,6 +10,9 @@ body {
 // html,
 // body,
 #tpl {
+    // stylelint-disable-next-line
+    --header-offset: 0;
+
     text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -23,6 +26,7 @@ body {
     position: relative;
     height: auto;
     overflow: hidden;
+    text-align: left;
 
     @include font-size;
     @include reduced-motion;

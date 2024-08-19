@@ -167,7 +167,7 @@
 
         &.img-full-size {
             .slide__img {
-                height: 100vh;
+                height: vh(1024);
                 margin-top: 0;
 
                 @media (--viewport-portrait-layout) {

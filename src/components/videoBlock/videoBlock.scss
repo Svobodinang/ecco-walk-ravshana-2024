@@ -8,7 +8,7 @@
             flex-direction: column;
             padding-left: 0;
             gap: rem(36, true);
-            padding-bottom: rem(200, true);
+            padding-bottom: rem(100, true);
         }
 
         &__text-wrapper {
@@ -53,7 +53,7 @@
         }
 
         .video {
-            height: 100vh;
+            height: vh(1024);
             width: auto;
 
             @media (--viewport-portrait-layout) {

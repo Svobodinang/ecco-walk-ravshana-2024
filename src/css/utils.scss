@@ -46,7 +46,7 @@ $baseHeightMb: 667;
         $base: if($mobile == true, $baseWidthMb, $baseHeightClickerDp);
     }
 
-    @return #{math.div($px * 100, $base)}vh;
+    @return calc(#{math.div($px * 100, $base)}vh * var(--header-offset));
 }
 
 @function vw-vh-contain($px, $mobile: false, $clicker: false) {

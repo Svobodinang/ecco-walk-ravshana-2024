@@ -34,7 +34,7 @@
     .swiper-slide {
         --parallax-offset: 30vh;
 
-        height: 100vh;
+        height: vh(1024);
         width: auto;
 
         @media (--viewport-portrait-layout) {
