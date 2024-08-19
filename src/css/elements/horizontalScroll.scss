@@ -36,6 +36,7 @@
 
         height: vh(1024);
         width: auto;
+        pointer-events: none;
 
         @media (--viewport-portrait-layout) {
             height: auto;

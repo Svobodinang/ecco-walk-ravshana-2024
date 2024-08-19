@@ -34,7 +34,7 @@ const start = () => {
             const header = document.querySelector('.new-header');
             const headerHeight = header ? header.offsetHeight : 0;
             const tpl = document.getElementById('tpl');
-    
+
             tpl.style.setProperty('--header-offset', 1 - (headerHeight / window.innerHeight));
             tpl.style.setProperty('height', `${window.innerHeight - headerHeight}px`);
         }
